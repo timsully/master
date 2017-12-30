@@ -1,0 +1,51 @@
+Navigating with the terminal
+
+ls - lists all contents of our home directory
+
+*you can also use ls as an argument* *you can also pass two arguments with ls and it will display the contents of both directories* (using absolute or relative paths)
+example: "ls Documents" - this would display all the contents of the Documents folder
+example: "ls /Users/js/Documents"
+example: "ls ~/Documents"
+*be sure to type in the right case since it is case sensitive
+
+pwd (print working directory) - returns working directory name
+
+Accessing directories with a space between the words or letters requires it to be in quotations or a back slash as follows
+example: ls "Some Directory"
+example: ls Some\ Directory
+
+Passing options to our ls command
+*you can combine these commands by just listing them out as follows...
+ls -t -l -a
+*this command will list the files as last modified (-t), give you a detailed list (-l), and last but not least display every file including hidden files (-a)
+
+*an alternative with the same output that I find more efficient is the command...
+ls -tla (order doesn't matter)
+
+ls -l - gives you a detailed list of your home directory
+
+ls -a - lists all files in home directory
+
+ls -t - sorts files by the time they were last modified
+
+Changing directories
+
+cd - command  changes directory with given name of directory after
+
+cd .. = moves one level up
+
+cd . = represents our current Directory
+
+Finder Integration with Terminal on Mac
+
+*click on a file and drag and drop it into the terminal to get the absolute path
+
+open . = opens the current directory in the Finder
+
+open -a Pages aFile.txt = this command allows you to open the text file in the application Pages
+
+open -R aFile.txt = reveals the file in the Finder
+
+open http://google.com = will open link in your default browser
+
+defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
