@@ -1,0 +1,50 @@
+Make Copy Move Link Files
+
+touch = allows you to create a file
+example: touch newTextFile.txt
+
+nano = an editor which allows you to create files
+example: nano aFile.txt
+
+mkdir = make directory
+example: mkdir aDir
+
+You can create files within directories by touch, but specifying the path.
+example: touch aDir/anotherDir
+
+cp = allows you to copy files
+example: cp aFile anotherFile
+*note that if there is already another file labeled anotherFile it will overwrite it
+
+.bak = allows you to create a backup copy of a file
+example: cp aFile aFile.bak
+*note that this is very useful when editing configuration files because you never know what could go wrong and it is better to be safe then sorry
+
+Copying Directories
+
+cp -r aDir secondDir = use the recursive option (-r) in order to copy all of the folder contents and structure accordingly into secondDir
+
+Move Files
+
+mv = allows you to move files
+example: mv aFile aDir
+another example: mv aFile ~/Documents/
+
+Rename File(s)
+
+mv aFile secondFile = allows you to rename the file from aFile to secondFile
+
+Globbing = let's us refer to a bunch of files with the asterisk *
+example: create several files using touch file1 file2 file3 file4 file5 then mv file* aDir/
+
+rm = allows you to delete files (doesn't go to the Trash bin)
+example: rm aFile
+
+rmdir = deletes directories with no content within the folder
+
+rmdir -r aFolder = allows you to delete a directory and the content within it
+
+Symbolic Links = creates a new file that points to another file that is specified
+example: ln -s aFile symLinkForFile
+
+cat = echoes out the contents of whatever file you pass to it
