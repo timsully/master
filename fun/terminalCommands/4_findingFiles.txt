@@ -1,0 +1,57 @@
+Find Files & Text Within files
+
+find = searches for files
+example: find ~/Documentqs
+
+find . = searches current directory
+
+find . -type f = searches for files that happen to be files(finds all files recursively through the directory that your in)
+
+find . -name "typeNameYourSearchingFor" = you can also find the name that you are looking for by typing it inbetween the quotations
+
+find . -name "*.txt" = allows you to search for all the files that end in .txt(within that directory)
+
+find . -iname "*.txt" = case insensitive search by adding an i to the -name(meaning it would return that txt files whether it was labeled in caps or not)
+example: find . -iname "*.txt"
+
+find . -size +2048 = allows you to find a file by size, by adding the plus you are telling it to find a file equal to or greater than what you specified
+* +2048 stands for 2048 byte blocks. Generally speaking it looks for files greater than 1 MB
+* whatever number you insert is just the number of 512 byte blocks
+
+find . -size -2048 = searches for files smaller than 1MB or the number you specify after the -
+
+find . -mtime -1 = allows you to find files by the time of the modification, creation or last access date
+
+find . -mtime -1 = files that have a modification time of less than one day old
+
+find . -mtime +1 = displays follows modified more than a day ago
+
+find . -atime -1 =  all files accessed within the last day
+
+find . -ctime -1 = all files created within the last displays
+
+Combining Conditions
+- you can combine conditions using and or or operators
+
+find . -iname "*.txt" -or -iname "*.doc" = looks for all the .txt files and .doc files within the current directory
+
+find . -iname "*.txt" -or -iname "*.doc" -and -mtime -1 = find .txt files and .doc files that are less than a day old
+
+find . -iname "*.txt" -print -or -iname "aDir" -prune = exclude directories from our search; returning aDir and the .txt file since it matches the conditions in the statement, -print is implied for the file being indicated behind it which is the "*.txt" file (correct me if I am wrong)
+
+grep = searching files for contents
+
+grep "Hello" aFile = returns the line of the file that it matched
+
+grep -i "Hello" afile  = case insensitive search by passing the -i
+
+grep -il "Hello" afile = returns the file that it matched instead of returning the lines within the file
+
+grep -il "Hello" * = searches for all the files within the directory that contain the word "Hello" thanks to the asterisk (*)
+
+grep -ilr "Hello" * = searches for all the files within the directory that contain the word "Hello" recursively through the current directory your in
+*you can't recursively grep and specify the type of file
+*in order to find it recursively again you must use the "find" command(example below)
+
+find . -name "*.txt" -exec grep -il "Hello" {} \; = this command searches for the string "Hello" within every .txt file in your current directory
+*{} = a placeholder for those file returned by find
