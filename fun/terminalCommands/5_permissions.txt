@@ -1,0 +1,40 @@
+Permission & How to Change Them Up Within the Terminal
+
+Say you were to create a text file via terminal by using the command "touch aFile.txt"
+*once you have created it  make a detailed list using "ls -l"
+* -l in the command gives more information about the file
+
+Once you press enter you will see a line with the following code.
+example:
+-rw-r--r--  1 user  staff  0 Apr  15  3:44 aFile.text
+
+user = this part shows user
+
+staff = shows group that has ownership of the file
+
+the first three commands on the left we will break
+
+-rw- = this refers to the user and the permissions it has which is read and write, hence the "rw" but cant execute it
+
+first "r--"
+r-- = this refers to permissions anyone in the group has (group as in other user accounts on your OS)(read but cant write)
+
+second "r--"
+r-- = refers to anyone else which could be someone on another machine or someone on another web server (can't read, write, or execute file)
+
+Changing permissions
+- we can change these permissions using "chmod"
+
+chmod g+w afile.txt =  this will allow the read and write permissions for the group as well and the user
+example of final output if done correctly: -rw-rw-r--
+
+chmod o+w afile.txt = this gives you access to read and write across all user, group, and others
+example of final output if done correctly: -rw-rw-rw-
+
+chmod a+x afile.txt = this command allows you to give execute permissions to everyone
+
+chmod go-x afile.txt = the - sign allows you to remove permissions to the groups you specify(in my case i chose to remove groups and others for afile.txt)
+example of final output if done correctly: -rwxrw-rw-
+
+chmod g+x-w afile.txt = this allows you execute permissions for the text file specified but not write
+example of final output if done correctly: -rwxr-xrw-
