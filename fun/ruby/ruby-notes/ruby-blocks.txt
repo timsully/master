@@ -1,0 +1,41 @@
+//Blocks
+Calculating the sum of a list of numbers. Example:
+
+numbers = [5, 2, 8]
+sum = 0
+numbers.each do |n|
+  sum += n
+end
+puts sum
+
+The example above is a reminder of the proper syntax.
+
+//Sorting
+Using the .sort! method to sort an array in descending
+order(in reverse) can use the combined comparison
+operator (<=>) or an if/elsif/else statement.
+
+//Sorting w/ Control Flow
+Example below:
+
+def alphabetize(arr, rev = false)
+  arr.sort!
+  if rev == true
+    arr.reverse!
+  else
+  	arr
+  end
+end
+
+numbers = [3, 5, 1, 6]
+
+puts alphabetize(numbers)
+
+In the example above we create an array called numbers.
+Then, we create an array. Finally, we print out 5, 4, 3, 2, 1.
+
+**Building your own methods is great for using code
+over and over without having to retype things, but it's
+also great for abstracting or simplifying your program.
+Once you write alphabetize, you don't ever have to think
+about how it works -- you just call it whenever you need it.
