@@ -1,0 +1,201 @@
+variable_name = gets.chomp
+
+gets = A Ruby method that gets input from the user. When getting input, Ruby automatically adds a blank line (or newline) after each bit of input;
+
+chomp = removes that extra line
+
+waiting for input because of gets.chomp so in other words answer the prompt indicated
+
+array = An array is a Ruby data type that holds an ordered collection of values, which can be any type of object including other arrays.
+
+//Syntax
+# Array.new constructor
+variable = Array.new([repeat], [item])
+
+//Example
+empty_arr = Array.new
+=> []
+
+matzes = Array.new(3, "Matz!")
+=> ["Matz!", "Matz!", "Matz!"]
+
+capitalize = capitalize is a method that capitalizes the first letter of a string and makes the rest of the letters lower case
+
+//Control Flow
+
+print "Integer please: "
+user_num = Integer(gets.chomp)
+
+if user_num < 0
+  puts "You picked a negative integer!"
+elsif user_num > 0
+  puts "You picked a positive integer!"
+else
+  puts "You picked zero!"
+end
+
+-Ruby doesn't care about whitespace (spaces and blank lines), so the indentation of the print statement isn't necessary.
+-The block of code following an if should be indented two spaces.
+
+Ruby not only has comparators but also has logical or boolean operators.
+Three of them
+and = &&
+or = | |
+not = !
+
+Combining Boolean Operators
+-You can combine boolean operators in your expressions
+//example
+(x && (y || w)) && z
+
+you can always use parentheses to control the order of evaluation. Expressions in parentheses are always evaluated before anything outside parentheses
+
+unless statement
+
+problem = false
+print "Good to go!" unless problem
+
+//Control Flow
+
+We can do that using Ruby's .include? method, which evaluates to true if it finds what it's looking for and false otherwise.
+//example
+if string_to_check.include? "substring"
+
+As a general rule, Ruby methods that end with ? evaluate to the boolean values true or false.
+
+.gsub method = global substitution that finds and replaces what you indicate
+//example
+string_to_change.gsub!(/s/, "th")
+
+Note: you cannot put a space between gsub! and the bit in parentheses.
+Remember, you want the ! at the end of the method name so that Ruby will change the string in-place.
+
+The 'While' Loop
+//example
+
+counter = 1
+while counter < 11
+  puts counter
+  counter = counter + 1
+end
+
+Sometimes you want to repeat an action in Ruby while a certain condition is true, but you don't know how many times you'll have to repeat that action. A good example would be prompting a user for a certain type of input: if they insist on giving you the wrong thing, you may have to re-ask them several times before you get the kind of input you're looking for.
+To accomplish this, we use something called a while loop. It checks to see if a certain condition is true, and while it is, the loop keeps running. As soon as the condition stops being true, the loop stops!
+
+Avoid infinite loops at all costs
+
+//another example
+i = 0
+while i < 5
+  puts i
+  i = i + 1
+end
+
+//The 'Until' Loop
+A complement to the while loop is the until loop which is like a backwards while loop. Just think of a backwards while loop.
+//example
+i = 0
+until i == 6
+  i = i + 1
+end
+puts i
+
+First we create the variable i and set it to 0. Next we execute a block of code until i is equal to 6. This block of code will increment i.
+When i is equal to 6 the block will end then we print the value of i which is 6 to the console
+
+
+//More Assignment Operators
+assignment operators include: += -= *= /=
+
+//Example
+counter += 1
+
+your telling ruby to add 1 to counter, this allows you to update variable values in a succinct way
+
+- some languages have increment operators ++ and -- which also add and subtract 1 from a value, BUT Ruby does not
+
+//The 'For' Loop
+Sometimes you do know how many times you'll be looping, however, and when that's the case, you'll want to use a for loop.
+
+//example
+for num in 1...10
+  puts num
+end
+
+- this would print numbers 1 through 9, essentially until 10
+- the three dots tells Ruby to exclude the final number in the count
+- in other words it means go up to but don't include 10
+- two dots prints all the way to the final number
+
+//example of two dot use case
+for num in 1..20
+  puts num
+end
+
+//The Loop Method
+- the simplest iterator is the loop method
+- An iterator is just a Ruby method that repeatedly invokes a block of code.
+- simplest loop iterator is the loop method
+
+//example of a basic and infinite loop is
+loop { print "Hello, world!" }
+
+- in ruby curly braces are generally interchangeable with the keywords do and end (to open and end the block to close it)
+
+- the break keyword breaks a loop as soon as its condition is met
+
+// Example
+i = 0
+loop do
+  i += 1
+  print "#{i}"
+  break if i > 5
+end
+
+//Next method
+-next can be used to skip over certain steps in the loop. For instance if we don't print out even numbers we can write
+
+//Example
+for i in 1..5
+  next if i % 2 == 0
+  print i
+end
+
+//Another example to skip odd numbers
+i = 20
+loop do
+  i -= 1
+  next if i % 2 == 1
+  print "#{i}"
+  break if i <= 0
+end
+
+-this loop allows us to skip every odd number until it is less than or equal to 0 and prints out every even number value of i
+
+// .each iterator
+-this method can apply an expression to each element of an object one at a time
+
+//Example
+object.each { |item|
+  # Do Something
+}
+
+//example of do/end method
+object.each do |item|
+  # Do something
+end
+- you can also use the keyword do instead of using the curly brackets, BUT remember to end it as well
+- the varible name between | | can be anything you like: it's a placeholder for each element of the object your using .each on
+
+//Example of print the string "Ruby!" 30 times
+i = 0
+loop do
+  print "Ruby!\n"
+  i += 1
+  break if i == 30
+end
+
+
+== (some true ass equals)
+
+think through all different states of the system

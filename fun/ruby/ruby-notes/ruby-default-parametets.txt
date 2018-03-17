@@ -1,0 +1,12 @@
+//Default Parameters
+
+def alphabetize(arr, rev=false)
+
+The example above introduces a new bit of code.
+We're defining a method called alphabetize. We can
+guess that the first parameter is an array(arr) but what
+is rev=false. Well...
+
+What this second parameter tells Ruby, rev=false, rev for
+reverse that will default to false if the user doesn't type
+in two arguments. 

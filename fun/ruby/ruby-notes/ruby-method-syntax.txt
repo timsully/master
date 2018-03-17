@@ -1,0 +1,146 @@
+//Method Syntax
+Methods are defined using the keyword def
+(short for define). Methods have three parts:
+
+1. The header, which includes the def(defined) keyword,
+the name of the method, and any arguments the method
+takes. (Arguments in the next section)
+
+2. The body, which is the block of code that describes
+the procedures the method carries out. The body is
+indented two spaces by convention(as with for,if,elsif,and else
+statements)
+
+3. The ends with the end keyword.
+
+Example of syntax:
+
+def welcome
+  puts "Welcome to Ruby!"
+end
+
+//Call it!
+Defining a method is great, but it's not much use
+to you unless you call it, or tell your program
+to execute it. For example, if you called cartoon_fox,
+the program will start looking for the method with
+that name and try to execute the code inside it.
+
+If the program doesn't find a method called cartoon_fox,
+it will return a NameError. We'll cover errors in
+another lesson.
+
+You call a method just by typing its name. Remember
+when you saw us type puts_1_to_10 or greeting after our
+method definition in the last two exercises? That was us
+calling our methods.
+
+//Parameters and Arguments
+If a method takes arguments, we say it accepts or expects
+those arguments. We might define a function, square, like so:
+
+def square(n)
+  puts n ** 2
+end
+
+and call it like this
+
+square(12)
+
+The argument is the piece of code you actually put
+between the method's parentheses when you call it,
+and the parameter is the name you put between the
+method's parentheses when you define it. For instance,
+when we defined square above, we gave it the parameter
+n(for number) and passed it the argument 12 when
+we called it.
+
+You can think of parameters as placeholders the method
+definition gives to arguments since it doesn't know ahead
+of time exactly what argument it's going to get.
+
+Parentheses are usually optional in Ruby, but it's a
+good idea to put your parameters and arguments in
+parentheses for readability.
+
+//Splat!
+Your methods not only don't know what arguments they're
+going to get ahead of time but occasionally, they
+don't even know how many arguments there will be.
+
+Let's say you have a method, friend, that puts the
+argument it receives from the user. It might look
+something like this:
+
+def friend(name):
+  puts "My friend is " + name + "."
+end
+
+This is great for just one friend, but what if you want
+to print out all of the user's friends, without knowing
+how many friend names the user will put in ahead of time?
+
+The solution: splat arguments. Splat arguments are
+arguments preceded by a *, which tells the program that
+the method can receive one or more arguments.
+
+//Let's Learn Return
+Sometimes we don't just want a method to print something
+to the console, but we actually want that method to hand
+us(or another method!) back a value. For that we use return.
+
+def double(n)
+  return n * 2
+end
+
+output = double(6)
+output += 2
+puts output
+
+In the example above, we define a new method called
+double that accepts one argument called n.
+
+Inside the method, we return two times n.
+
+After that, we call our new double with an argument
+of 6 and store the result, 12, in output.
+
+Then, we increase output to 14 and print it out
+to the console.
+
+//Blocks Are Like Nameless Methods
+Most methods that you've worked with have defined
+names that either you or someone else gave them
+(i.e. [array].sort(), "string".downcase(), and so on).
+You can think of blocks as a way of creating methods
+that don't have a name. (These are similar to anonymous
+functions in JavaScript or lambdas in Python.)
+
+Blocks can be defined with either the keywords do
+and end or with curly braces ({}).
+
+//How Blocks Differ From Methods
+There are some differences between blocks and methods,
+however. The block that we define(following .each) will
+only be called once, and in the context of the array
+that we are iterating over. It appears just long enough
+to do some work for each, then vanishes into the night.
+
+Check out the code below. That capitalize method
+capitalizes a word, and we can continually invoke the
+capitalize method by name. We can capitalize("matz"),
+capitalize("eduardo"), or any string we like.
+
+# method that capitalizes a word
+def capitalize(string)
+  puts "#{string[0].upcase}#{string[1..-1]}"
+end
+
+capitalize("ryan") # prints "Ryan"
+capitalize("jane") # prints "Jane"
+
+# block that capitalizes each string in the array
+["ryan", "jane"].each {|string| puts "#{string[0].upcase}#{string[1..-1]}"}
+# prints "Ryan", then "Jane"
+
+//Using Code Blocks
