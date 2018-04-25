@@ -1,0 +1,429 @@
+/* Tim. Startpoint */
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+/* Font families, proper weights, etc */
+body {
+  font-family: 'Titillium Web', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+p {
+  font-size: 1em;
+  line-height: 1.6em;
+}
+
+
+/* Specify h1 size for mobile since it is different */
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+
+h3 {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+/* Project Titles */
+h4 {
+  font-size: 3.18em;
+  font-weight: lighter;
+  color: #fff;
+}
+
+
+h5 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+
+a {
+  color: #21262B;
+}
+
+
+a:hover {
+  color: #21262B;
+}
+
+
+.container{
+  padding-top: 1.25em;
+}
+
+
+#nav-toggle-button span{
+    background-color: #21262B;
+}
+
+.nav-toggle-button span{
+    background-color: #21262B;
+}
+
+
+.navbar-toggle {
+  margin-top: 0.5em;
+  margin-right: 0;
+}
+
+
+#myNavbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
+div.tim-logo {
+  padding-top: 1.25em;
+}
+
+
+.tim-logo {
+  /* margin-top: 0.9em; */
+  width: 52px;
+  height: 27px;
+  /* margin-left: 0; */
+  /* background-image: url(/img/tim.logo.svg); */
+  /* background-repeat: no-repeat; */
+}
+
+
+.nav {
+  font-weight: 100;
+  -webkit-text-stroke-width: 0.6px;
+  -webkit-text-stroke-color: #21262B;
+  -webkit-text-fill-color: #21262B;
+}
+
+
+.navbar-brand {
+  padding-left: 0;
+  padding-top: 11px;
+}
+
+
+/* Code for Index.html Startpoint */
+.mg-top {
+  margin-top: 60px;
+}
+
+
+hr {
+  height: 6px;
+  width: 32px;
+  padding: 0;
+  margin: 0;
+  background-color: #21262B;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+
+.hr-top {
+  margin-top: 0.8em;
+}
+
+
+.jt-padding {
+  padding-top: 0.75em;
+  padding-bottom: 3.125em;
+}
+
+/* Airbnb Project Detail */
+.air-shots-project {
+  height: 350px;
+  width: 50%;
+  float: left;
+  background-color: #31628A;
+  position: relative;
+}
+
+
+.airbnb-logo {
+  margin-top: 1.875em;
+  margin-left: 1.875em;
+  width: 45px;
+  height: 45px;
+  padding: 0;
+  float: left;
+}
+
+
+.air-shots-title {
+  padding-left: 30px;
+  padding-top: 143px;
+  /*float: inherit;*/
+}
+
+
+.go {
+  padding-left: 30px;
+  padding-top: 5.438em;
+  color: #fff;
+  float: left;
+}
+
+
+/* 13 x 3 */
+.hr-white {
+  height: 3px;
+  width: 13px;
+  margin-top: 140px;
+  margin-left: 2.2em;
+  background-color: #FFF;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+
+.air-left {
+  width: 205px;
+  height: auto;
+  position: absolute;
+  /*display: inline;*/
+}
+
+
+.air-right {
+  margin-top: 30px;
+  margin-left: 354px;
+  width: 186px;
+  height: 320px;
+  /*border: 1px solid red;*/
+  position: absolute;
+  /*float: right;*/
+  /*display: inline;*/
+}
+
+
+/* Shore Store Detail */
+.shore-store-project {
+  height: 350px;
+  width: 50%;
+  float: right;
+  background-color: #25A7DE;
+  position: relative;
+}
+
+
+.shore-left {
+  width: 270px;
+  height: 350px;
+  position: absolute;
+}
+
+
+.shore-store-title {
+  padding-left: 30px;
+  padding-top: 143px;
+
+}
+
+
+.shore-right {
+  padding-top: 30px;
+  padding-left: 354px;
+  width: 186px;
+  height: 320px;
+  position: absolute;
+}
+
+
+/* IzzyA's  Detail */
+.izzya-project {
+  height: 350px;
+  width: 50%;
+  float: right;
+  background-color: #544943;
+  /*position: relative;*/
+}
+
+
+.izzya-logo {
+  margin-top: 1.875em;
+  margin-left: 1.875em;
+  width: 89px;
+  height: 48px;
+  padding: 0;
+  float: left;
+}
+
+
+.izzya-left {
+  width: 160px;
+  height: 350px;
+  position: absolute;
+  border: 1px solid red;
+}
+
+
+.izzya-right {
+  padding-top: 50px;
+  padding-left: 200px;
+  width: 186px;
+  height: 320px;
+  position: absolute;
+  border: 1px solid red;
+}
+
+
+/* Palace of Fine Art Detail */
+.pofa-project {
+  height: 350px;
+  width: 50%;
+  float: right;
+  background-color: #C0392B;
+}
+
+
+.pofa-left {
+  width: 390px;
+  height: auto;
+  position: absolute;
+  /*display: inline;*/
+  z-index: 1;
+}
+
+
+.pofa-right {
+    padding-top: 50px;
+    padding-left: 200px;
+    width: 186px;
+    height: 320px;
+    /*border: 1px solid red;*/
+    position: absolute;
+}
+
+
+/* TechniCar Detail */
+.technicar-project {
+  height: 350px;
+  width: 50%;
+  float: left;
+  background-color: #5191BC;
+  position: relative;
+}
+
+
+.technicar-logo {
+  margin-top: 1.875em;
+  margin-left: 1.875em;
+  width: 45px;
+  height: 29px;
+  padding: 0;
+  float: left;
+}
+
+
+/* DAJ Blog */
+.daj-project {
+  height: 350px;
+  width: 50%;
+  float: right;
+  background-color: #FFF;
+}
+
+
+.daj-logo {
+  margin-top: 1.875em;
+  margin-left: 1.875em;
+  width: 86px;
+  height: 23px;
+  padding: 0;
+  float: left;
+}
+
+
+.daj-title {
+  padding-left: 30px;
+  padding-top: 143px;
+  color: #21262B;
+}
+
+
+.daj-go {
+  padding-left: 30px;
+  padding-top: 5.438em;
+  color: #21262B;
+  float: left;
+}
+
+
+.hr-daj {
+  height: 3px;
+  width: 13px;
+  margin-top: 140px;
+  margin-left: 2.2em;
+  background-color: #21262B;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+
+.daj-right {
+  padding-top: 67px;
+  padding-left: 245px;
+  width: 186px;
+  height: 320px;
+  position: absolute;
+}
+
+
+/* App Store Statistics */
+.app-store-project {
+  height: 350px;
+  width: 50%;
+  float: left;
+  background-color: #F0BF99;
+  position: relative;
+}
+
+
+.app-store-left {
+  width: 216px;
+  height: auto;
+  position: absolute;
+  /*display: inline;*/
+}
+
+
+.app-store-right {
+  padding-top: 62px;
+  padding-left: 280px;
+  width: 186px;
+  height: 320px;
+  position: absolute;
+}
+
+
+/* Star Wars */
+.star-wars-project {
+  height: 350px;
+  width: 50%;
+  float: right;
+  background-image: url('/img/star-wars-bg.png');
+  position: relative;
+}
+
+
+.star-wars-logo {
+  margin-top: 1.875em;
+  margin-left: 1.875em;
+  width: 86px;
+  height: 37px;
+  padding: 0;
+  float: left;
+}
