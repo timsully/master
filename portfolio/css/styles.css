@@ -47,6 +47,14 @@ h5 {
 }
 
 
+h6 {
+  float: right;
+  font-size: 1.125em;
+  font-weight: bolder;
+
+}
+
+
 a {
   color: #21262B;
 }
@@ -265,7 +273,6 @@ hr {
   width: 160px;
   height: 350px;
   position: absolute;
-  border: 1px solid red;
 }
 
 
@@ -275,7 +282,6 @@ hr {
   width: 186px;
   height: 320px;
   position: absolute;
-  border: 1px solid red;
 }
 
 
@@ -426,4 +432,145 @@ hr {
   height: 37px;
   padding: 0;
   float: left;
+}
+
+
+.star-wars-right {
+  padding-top: 110px;
+  padding-left: 150px;
+  width: 186px;
+  height: 320px;
+  position: absolute;
+}
+
+
+/* Footer */
+.footer-icons {
+  width: 26px;
+  height: 26px;
+}
+
+
+.footer {
+  height: 87px;
+  width: 1170px;
+  padding: 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  height: 26px;
+  width: 221px;
+  padding-top: 30px;
+}
+
+
+.behance-icon {
+  width: 26px;
+  height: 18px;
+}
+
+
+.youtube-icon {
+  width: 26px;
+  height: 20px;
+}
+
+
+.footer-top-about {
+  padding-top: 200px;
+}
+
+
+/* Motion Graphics Startpoint */
+.motion-wrapper {
+  margin-top: 70px;
+  width: 100%;
+  height: 448px;
+  position: relative;
+}
+
+
+.apple-box-one {
+  width: 360px;
+  height: 208px;
+  border: 1px solid red;
+  position: absolute;
+  margin-right: 30px;
+  float: left;
+}
+
+
+.apple-box-two {
+  width: 360px;
+  height: 208px;
+  border: 1px solid red;
+  position: absolute;
+  margin-right: 30px;
+}
+
+
+.apple-box-three {
+  width: 360px;
+  height: 208px;
+  border: 1px solid red;
+  position: absolute;
+  right: 0;
+}
+
+
+/* About Me Detail*/
+.headers {
+  font-size: 4.5em;
+  font-weight: bolder;
+}
+
+
+.about-headers {
+  font-size: 2.875em;
+  font-weight: bold;
+  float: left;
+}
+
+
+.p-top {
+  padding-top: 70px;
+}
+
+
+.wim-p {
+  padding-top: 80px;
+  width: 652px;
+  height: 160px;
+}
+
+
+.wid-p {
+  padding-top: 155px;
+  width: 652px;
+  height: 160px;
+}
+
+
+.wid-top {
+  padding-top: 150px;
+  float: left;
+}
+
+
+.hr-top-wia {
+  margin-top: 8.4em;
+  position: absolute;
+}
+
+
+.hr-top-wid {
+  margin-top: 14.2em;
+  position: absolute;
 }
