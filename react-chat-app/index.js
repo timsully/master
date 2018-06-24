@@ -12,3 +12,16 @@ class App extends React.component {
   }
 
 }
+
+
+// Creating dummy data to understand the data flow of the app
+const DUMMY_DATA = [
+  {
+    senderID: "perborgen",
+    text: "who'll win?"
+  },
+  {
+    senderId: "janedoe",
+    text: "who'll win?"
+  }
+]
